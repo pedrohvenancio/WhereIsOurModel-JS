@@ -1,4 +1,442 @@
-html, body {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        
+    }
+    
+    body {
+        background-image: url(background.jpg);
+        background-position: start;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #btn {
+        background-color: white;
+        font-size: 20px;
+        color:rgb(94, 94, 94);
+        padding: 5px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        width: 150;
+        height: 50px;
+        position: fixed;
+        bottom: 5%;
+    
+        transition: all  0.3s ease;
+    }
+    #btn:hover {
+        background-color: rgb(94, 94, 94);
+        color:white;
+    }
+    
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 700,
+      'GRAD' 200,
+      'opsz' 48
+    }
+    
+    .hidden {
+        opacity: 0;
+        display: none;
+    }
+    
+    .model {
+        width: 250px;
+        height: 500px;
+    
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 5px;
+    
+        padding: 10px 15px;
+        box-shadow: 10px 20px 20px black;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+        position: fixed;
+        float: right;
+        right: auto;
+        top: 5%;
+    
+        animation-name: slidein;
+        animation-duration: 0.5s;
+        animation-play-state: paused;
+        animation-iteration-count: initial;
+    }
+    
+    .model > p {
+        font-size: 22px;
+    }
+    
+    @keyframes slidein {
+        0% {
+            margin-right: -100%;
+            opacity: 0;
+        }
+        50% {
+            margin-right: -50%;
+            opacity: 0.5;
+        }
+        100% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+    }
+    
+    #closeM {
+        margin-left: 87%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        
+    }
+    
+    body {
+        background-image: url(background.jpg);
+        background-position: start;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #btn {
+        background-color: white;
+        font-size: 20px;
+        color:rgb(94, 94, 94);
+        padding: 5px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        width: 150;
+        height: 50px;
+        position: fixed;
+        bottom: 5%;
+    
+        transition: all  0.3s ease;
+    }
+    #btn:hover {
+        background-color: rgb(94, 94, 94);
+        color:white;
+    }
+    
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 700,
+      'GRAD' 200,
+      'opsz' 48
+    }
+    
+    .hidden {
+        opacity: 0;
+        display: none;
+    }
+    
+    .model {
+        width: 250px;
+        height: 500px;
+    
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 5px;
+    
+        padding: 10px 15px;
+        box-shadow: 10px 20px 20px black;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+        position: fixed;
+        float: right;
+        right: auto;
+        top: 5%;
+    
+        animation-name: slidein;
+        animation-duration: 0.5s;
+        animation-play-state: paused;
+        animation-iteration-count: initial;
+    }
+    
+    .model > p {
+        font-size: 22px;
+    }
+    
+    @keyframes slidein {
+        0% {
+            margin-right: -100%;
+            opacity: 0;
+        }
+        50% {
+            margin-right: -50%;
+            opacity: 0.5;
+        }
+        100% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+    }
+    
+    #closeM {
+        margin-left: 87%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        
+    }
+    
+    body {
+        background-image: url(background.jpg);
+        background-position: start;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #btn {
+        background-color: white;
+        font-size: 25px;
+        color:rgb(94, 94, 94);
+        padding: 5px 10px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        width: 450;
+        height: 70px;
+        position: fixed;
+        bottom: 5%;
+    
+        transition: all  0.3s ease;
+    }
+    #btn:hover {
+        background-color: rgb(94, 94, 94);
+        color:white;
+    }
+    
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 700,
+      'GRAD' 200,
+      'opsz' 48
+    }
+    
+    .hidden {
+        opacity: 0;
+        display: none;
+    }
+    
+    .model {
+        width: 550px;
+        height: 500px;
+    
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 5px;
+    
+        padding: 10px 15px;
+        box-shadow: 10px 20px 20px black;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+        position: fixed;
+        float: right;
+        right: auto;
+        top: 20%;
+    
+        animation-name: slidein;
+        animation-duration: 0.5s;
+        animation-play-state: paused;
+        animation-iteration-count: initial;
+    }
+    
+    .model > p {
+        font-size: 35px;
+    }
+    
+    @keyframes slidein {
+        0% {
+            margin-right: -100%;
+            opacity: 0;
+        }
+        50% {
+            margin-right: -50%;
+            opacity: 0.5;
+        }
+        100% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+    }
+    
+    #closeM {
+        margin-left: 94%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        
+    }
+    
+    body {
+        background-image: url(background.jpg);
+        background-position: start;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #btn {
+        background-color: white;
+        font-size: 25px;
+        color:rgb(94, 94, 94);
+        padding: 5px 10px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        width: 450;
+        height: 70px;
+        position: fixed;
+        bottom: 5%;
+    
+        transition: all  0.3s ease;
+    }
+    #btn:hover {
+        background-color: rgb(94, 94, 94);
+        color:white;
+    }
+    
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 700,
+      'GRAD' 200,
+      'opsz' 48
+    }
+    
+    .hidden {
+        opacity: 0;
+        display: none;
+    }
+    
+    .model {
+        width: 550px;
+        height: 500px;
+    
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 5px;
+    
+        padding: 10px 15px;
+        box-shadow: 10px 20px 20px black;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+        position: fixed;
+        float: right;
+        right: auto;
+        top: 20%;
+    
+        animation-name: slidein;
+        animation-duration: 0.5s;
+        animation-play-state: paused;
+        animation-iteration-count: initial;
+    }
+    
+    .model > p {
+        font-size: 35px;
+    }
+    
+    @keyframes slidein {
+        0% {
+            margin-right: -100%;
+            opacity: 0;
+        }
+        50% {
+            margin-right: -50%;
+            opacity: 0.5;
+        }
+        100% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+    }
+    
+    #closeM {
+        margin-left: 94%;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -94,3 +532,4 @@ body {
 #closeM {
     margin-left: 94%;
 }
+}      
